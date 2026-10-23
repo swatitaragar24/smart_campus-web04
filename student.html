@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><head><title>Student - Book</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<h2>Student Dashboard - <span id="user"></span></h2>
+<button onclick="logout()">Logout</button>
+
+<h3>1. Search Availability & Book</h3>
+<input type="date" id="date">
+<div id="facilities" class="grid"></div>
+
+<h3>My Bookings - Status + Cancel</h3>
+<div id="myBookings"></div>
+
+<h3>2. Report Facility Issue</h3>
+<div class="card">
+  <select id="facId"><option value="0">Seminar Hall A</option><option value="1">Kaspersky lab</option><option value="2">Gymkhana</option></select>
+  <select id="cat"><option>electrical</option><option>plumbing</option><option>cleaning</option><option>mopping</option><option>other</option></select>
+  <select id="pri"><option>low</option><option>medium</option><option>high</option><option>critical</option></select>
+  <textarea id="desc" placeholder="Describe issue (min 10 letters)"></textarea>
+  <button onclick="reportIssue()">Report Issue</button>
+</div>
+<div id="myIssues">
+    </div>
+
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+<script>loadStudent();</script>
+</body>
+</html>

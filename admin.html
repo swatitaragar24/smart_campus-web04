@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html><head><title>Admin</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<h2>Admin Dashboard - Approvals & Analytics</h2>
+<button onclick="logout()">Logout</button>
+
+<h3>Pending Approvals</h3>
+<div id="pending"></div>
+
+<h3>Usage Analytics </h3>
+<div id="analytics"></div>
+
+<h3>Facility Issues - Status Tracking</h3>
+<div id="allIssues"></div>
+
+<h3>Audit History </h3>
+<div id="audit" style="background:#111a30; padding:10px; max-height:200px; overflow:auto"></div>
+
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+<script>loadAdmin();</script>
+</body></html>

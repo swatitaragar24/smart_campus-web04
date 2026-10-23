@@ -1,0 +1,8 @@
+body{font-family: Arial; background:#0a1020; color:white; margin:0; padding:20px}
+.login-box,.card{background:#111a30; padding:20px; border-radius:12px; max-width:500px; margin:40px auto; border:1px solid #333}
+input,select,textarea,button{width:100%; padding:10px; margin-top:10px; border-radius:8px; border:none}
+button{background:#22d3ee; font-weight:bold; cursor:pointer}
+.grid{display:grid; grid-template-columns:1fr 1fr; gap:15px}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.free{border-left:5px solid #22c55e} .booked{border-left:5px solid #ef4444}
+.toast{position:fixed; bottom:20px; right:20px; background:#22d3ee; color:black; padding:12px; border-radius:8px; display:none}
